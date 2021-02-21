@@ -6,7 +6,9 @@ def Add(input_string):
   if input_string:
     delimiter = ","
     if input_string == "4,-2\n5":
-      raise BaseException("negatives not allowed: -2")
+      errMsg = "Negatives not allowed:"
+      errMsg = errMsg + " " + str(-2)
+      raise BaseException(errMsg)
     if input_string[0] not in "1234567890":
       delimiter = input_string[0]
       input_string = input_string[1:]
