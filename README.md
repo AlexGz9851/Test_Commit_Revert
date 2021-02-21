@@ -17,11 +17,11 @@ This is an activity for TC3405 course.
     "commands": [
             {
                 "match": "(.+\\\\Test_Commit_Revert\\\\tests_stringcalculator\\.py|.+\\/Test_Commit_Revert\\/tests_stringcalculator\\.py)",
-                "cmd": "clear; git add ./tests_stringcalculator.py; git commit -m \"test\""
+                "cmd": "git add ./tests_stringcalculator.py; git commit -m \"test\""
             },
             {
                 "match": "(.+\\\\Test_Commit_Revert\\\\stringcalculator\\.py|.+\\/Test_Commit_Revert\\/stringcalculator\\.py)",
-                "cmd": "clear; python ./stringcalculator.py && git commit -am progress || git reset --hard",
+                "cmd": "python ./stringcalculator.py && git commit -am progress || git reset --hard",
                 "runIn": "terminal"
             },
         ]
