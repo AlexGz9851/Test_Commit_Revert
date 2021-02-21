@@ -27,7 +27,6 @@ class TestStringMethods(unittest.TestCase):
 
     def test_negatives(self):
         self.assertRaises(SomeCoolException, stringcalculator.Add("4,-2\n5")
-  
 
 
 if __name__ == '__main__':
