@@ -21,7 +21,9 @@ class TestStringMethods(unittest.TestCase):
 
     def test_jump_line(self):
         self.assertEqual(stringcalculator.Add("4,2\n5"), 11)
-    
+
+    def test_different_delimiter(self):
+        self.assertEqual(stringcalculator.Add(":4:2\n5"), 11)    
 
 
 if __name__ == '__main__':
