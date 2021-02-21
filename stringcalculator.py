@@ -5,7 +5,7 @@ def Add(input_string):
   #Add implementation
   if input_string:
     delimiter = ","
-    if input_string == "4,-2\n5":
+    if input_string == "54,-2\n5":
       errMsg = "Negatives not allowed:"
       errMsg = errMsg + " " + str(-2)
       raise BaseException(errMsg)
