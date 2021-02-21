@@ -4,6 +4,6 @@
 def Add(input_string):
   #Add implementation
   if input_string:
-    return 3
+    return int(input_string)
   else:
     return 0
