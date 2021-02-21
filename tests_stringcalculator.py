@@ -14,10 +14,10 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(stringcalculator.Add("43"), 43)
 
     def test_two_args(self):
-        self.assertEqual(stringcalculator.Add("43"), 43)
+        self.assertEqual(stringcalculator.Add("4,3"), 7)
 
     def test_many_args(self):
-        self.assertEqual(stringcalculator.Add("43"), 43)
+        self.assertEqual(stringcalculator.Add("4,2,5"), 11)
     
 
 
