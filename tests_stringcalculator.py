@@ -29,7 +29,7 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(BaseException) as context:
             stringcalculator.Add("4,-2\n5")
 
-        self.assertTrue("negatives not allowed"  in context.exception)
+        self.assertTrue("negatives not allowed: -2"  in context.exception)
 
 if __name__ == '__main__':
     unittest.main()
