@@ -1,10 +1,10 @@
 import unittest
-from . import stringcalculator
+import stringcalculator
 
 
 class TestStringMethods(unittest.TestCase):
 
-    def test_upper(self):
+    def test_zero_args(self):
         self.assertEqual(stringcalculator.Add(""), 0)
 
 
