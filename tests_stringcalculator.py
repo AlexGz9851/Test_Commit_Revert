@@ -31,7 +31,7 @@ class TestStringMethods(unittest.TestCase):
 
         self.assertTrue("Negatives not allowed: -2"  in context.exception)
     
-        def test_many_negatives(self):
+    def test_many_negatives(self):
         with self.assertRaises(BaseException) as context:
             stringcalculator.Add("54,-2\n-3")
 
