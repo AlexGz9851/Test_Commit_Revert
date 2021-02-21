@@ -1,6 +1,9 @@
 
 
 
-def Add(a):
+def Add(input_string):
   #Add implementation
-  return 1*0
+  if input_string:
+    return 1
+  else:
+    return 0
