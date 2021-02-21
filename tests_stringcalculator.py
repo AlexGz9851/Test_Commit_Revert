@@ -13,6 +13,11 @@ class TestStringMethods(unittest.TestCase):
     def test_one_ii_args(self):
         self.assertEqual(stringcalculator.Add("43"), 43)
 
+    def test_two_args(self):
+        self.assertEqual(stringcalculator.Add("43"), 43)
+
+    def test_many_args(self):
+        self.assertEqual(stringcalculator.Add("43"), 43)
     
 
 
