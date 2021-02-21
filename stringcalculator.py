@@ -6,10 +6,7 @@ def Add(input_string):
   if input_string:
     args = input_string.split(",")
     args = map(int, args)
-    result = 0
-    for i in args:
-      result += i
-    return result
+    return sum(args)
 
   else:
     return 0
