@@ -23,7 +23,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(stringcalculator.Add("4,2\n5"), 11)
 
     def test_different_delimiter(self):
-        self.assertEqual(stringcalculator.Add(":4:2\n5"), 11)
+        self.assertEqual(stringcalculator.Add(":\n4:2\n5"), 11)
 
     def test_negatives(self):
         with self.assertRaises(BaseException) as context:
