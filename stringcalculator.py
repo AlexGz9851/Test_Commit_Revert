@@ -1,8 +1,10 @@
 
 def checkNeg(args):
   errMsg = "Negatives not allowed:"
+  err = False
   for i in args:
     if i< 0:
+      err = True
       errMsg = errMsg + " " + str(-2)
       raise BaseException(errMsg)
 
