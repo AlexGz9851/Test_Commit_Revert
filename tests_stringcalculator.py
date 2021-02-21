@@ -26,7 +26,10 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(stringcalculator.Add(":4:2\n5"), 11)
 
     def test_negatives(self):
-        self.assertRaises(Exception, stringcalculator.Add("4,-2\n5"))
+        with self.assertRaises(BaseException) as context:
+            stringcalculator.Add("4,-2\n5")
+
+        self.assertTrue("negatives not allowed"  in context.exception)
 
 if __name__ == '__main__':
     unittest.main()
