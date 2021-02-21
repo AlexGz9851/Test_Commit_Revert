@@ -18,11 +18,13 @@ def Add(input_string):
     if input_string[0] not in "1234567890":
       delimiter = input_string[0]
       input_string = input_string[1:]
-      
+
     input_string = input_string.replace("\n",delimiter)
     args = input_string.split(delimiter)
     args = map(int, args)
+
     checkNeg(args)
+    
     return sum(args)
 
   else:
