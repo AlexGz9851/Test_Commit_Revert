@@ -6,7 +6,9 @@ def checkNeg(args):
     if i< 0:
       err = True
       errMsg = errMsg + " " + str(i)
-      raise BaseException(errMsg)
+      
+  if err:
+    raise BaseException(errMsg)
 
 
 def Add(input_string):
