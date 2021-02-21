@@ -5,7 +5,7 @@ def checkNeg(args):
   for i in args:
     if i< 0:
       err = True
-      errMsg = errMsg + " " + str(-2)
+      errMsg = errMsg + " " + str(i)
       raise BaseException(errMsg)
 
 
