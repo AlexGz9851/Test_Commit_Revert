@@ -10,14 +10,15 @@ def checkNeg(args):
   if err:
     raise BaseException(errMsg)
 
-
 def Add(input_string):
   #Add implementation
   if input_string:
     delimiter = ","
+
     if input_string[0] not in "1234567890":
       delimiter = input_string[0]
       input_string = input_string[1:]
+      
     input_string = input_string.replace("\n",delimiter)
     args = input_string.split(delimiter)
     args = map(int, args)
