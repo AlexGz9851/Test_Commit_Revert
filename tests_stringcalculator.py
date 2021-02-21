@@ -26,8 +26,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(stringcalculator.Add(":4:2\n5"), 11)
 
     def test_negatives(self):
-        with self.assertRaises(stringcalculator.NegException): 
-            stringcalculator.Add("4,-2\n5")
+        self.assertRaises(SomeCoolException, stringcalculator.Add("4,-2\n5")
   
 
 
