@@ -14,7 +14,6 @@ def Add(input_string):
       input_string = input_string[1:]
     input_string = input_string.replace("\n",delimiter)
     args = input_string.split(delimiter)
-    print(args)
     return sum(map(int, args))
 
   else:
